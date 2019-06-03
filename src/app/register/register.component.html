@@ -1,0 +1,20 @@
+<h5 align="center">If You Want To See My Profile, Please Sign up.</h5>
+<div id="login-box">
+	<div class="left">
+		<h1>Sign up</h1>
+
+		<form class="form-detail" action="#" method="post">
+
+
+			<input type="text" [(ngModel)]="register.userName" name="username" placeholder="User Name" required />
+			<input type="text" [(ngModel)]="register.email" name="email" placeholder="E-mail" required
+				pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" />
+			<input type="text" [(ngModel)]="register.firstName" name="firstName" placeholder="First Name" required />
+			<input type="text" [(ngModel)]="register.lastName" name="lastName" placeholder="Last Name" required />
+
+			<button class="submit" (click)="signUp()">sign Up</button>
+
+		</form>
+
+	</div>
+</div>
